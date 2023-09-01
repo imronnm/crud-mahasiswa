@@ -1,26 +1,29 @@
 # Aplikasi Managemen Mahasiswa
-## _Welcome to the Student Management System project! This project is designed to help you manage student records easily using a Spring Boot application connected to a PostgreSQL database._
+## _Selamat datang di proyek Sistem Manajemen Mahasiswa! Proyek ini dirancang untuk membantu Anda mengelola catatan mahasiswa dengan mudah menggunakan aplikasi Spring Boot yang terhubung ke basis data PostgreSQL._
 
 [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-Project Overview The Student Management System is a Spring Boot application that allows you to perform CRUD (Create, Read, Update, Delete) operations on student records. It includes features like adding new students, retrieving student information, updating student details, and deleting student records.
+Gambaran Proyek Sistem Manajemen Mahasiswa adalah aplikasi Spring Boot yang memungkinkan Anda melakukan operasi CRUD (Create, Read, Update, Delete) pada catatan mahasiswa. Ini mencakup fitur seperti menambahkan mahasiswa baru, mengambil informasi mahasiswa, memperbarui detail mahasiswa, dan menghapus catatan mahasiswa.
 
-## Features
-- Create new student records Retrieve all students Retrieve student by ID Update student information Delete student records Custom queries for searching students by NIM and address Prerequisites Before getting started, ensure you have the following:
+## Fitur
+- Membuat catatan mahasiswa baru
+- Mengambil semua catatan mahasiswa
+- Mengambil catatan mahasiswa berdasarkan ID
+- Memperbarui informasi mahasiswa
+- Menghapus catatan mahasiswa
+- Pertanyaan kustom untuk mencari mahasiswa berdasarkan NIM dan alamat
 
-## Prerequisites
-- Java JDK (version 17) 
-- Spring Boot (version 3.1.3) 
-- PostgreSQL database Postman (for testing endpoints)
-- 
+
 ## Endpoints
-GET /students: Retrieve all students GET /students/{id}: Retrieve student by ID POST /students: 
-Create a new student PUT /students/{id}: 
-Update student information by ID DELETE /students/{id}: 
-Delete student by ID 
-Custom Queries GET /students/byNim/{nim}: 
-Retrieve students by NIM GET /students/byAddress/{address}: 
-Retrieve students by address Contributing Contributions are welcome! If you find a bug or have a feature request, please open an issue. If you'd like to contribute code, please fork the repository and create a pull request.
+GET /students: Mengambil semua catatan mahasiswa
+GET /students/{id}: Mengambil catatan mahasiswa berdasarkan ID
+POST /students: Membuat catatan mahasiswa baru
+PUT /students/{id}: Memperbarui informasi mahasiswa berdasarkan ID
+DELETE /students/{id}: Menghapus catatan mahasiswa berdasarkan ID
+
+Pertanyaan Kustom
+GET /students/byNim/{nim}: Mengambil mahasiswa berdasarkan NIM
+GET /students/byAddress/{address}: Mengambil mahasiswa berdasarkan alamat
 

@@ -7,10 +7,6 @@ import java.util.List;
 
 public interface StudentRepository extends JpaRepository<Student, Long> {
 
-    // Native SQL query to retrieve all students
-    @Query(value = "SELECT * FROM students", nativeQuery = true)
-    List<Student> getAllStudents();
-
     // Native SQL query to retrieve students by their NIM
     @Query(value = "SELECT * FROM students WHERE nim = ?1", nativeQuery = true)
     List<Student> findStudentsByNim(String nim);

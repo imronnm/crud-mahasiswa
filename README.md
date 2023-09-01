@@ -1,4 +1,4 @@
-Student Management System
+#Student Management System
 Welcome to the Student Management System project! This project is designed to help you manage student records easily using a Spring Boot application connected to a PostgreSQL database.
 
 Table of Contents

@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class StudentService {
@@ -24,7 +24,9 @@ public class StudentService {
     }
 
     public List<Student> getAll() {
-        return studentRepository.findAll();
+        return studentRepository.findAll().
+                stream().
+                collect(Collectors.toList());
     }
 
     public Student getById(Long id) {
@@ -49,11 +51,14 @@ public class StudentService {
 
     // Custom query: Find students by NIM
     public List<Student> findStudentsByNim(String nim) {
-        return studentRepository.findStudentsByNim(nim);
+        return studentRepository.findStudentsByNim(nim).
+                stream()
+                .collect(Collectors.toList());
     }
 
     // Custom query: Find students by address
     public List<Student> findStudentsByAddress(String address) {
-        return studentRepository.findStudentsByAddress(address);
+        return studentRepository.findStudentsByAddress(address).stream()
+                .collect(Collectors.toList());
     }
 }

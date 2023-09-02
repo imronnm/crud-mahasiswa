@@ -24,9 +24,7 @@ public class StudentService {
     }
 
     public List<Student> getAll() {
-        return studentRepository.findAll().
-                stream().
-                collect(Collectors.toList());
+        return studentRepository.findAll();
     }
 
     public Student getById(Long id) {

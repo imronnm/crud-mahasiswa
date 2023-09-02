@@ -1,5 +1,4 @@
-package com.imronmaulana.crudstudent;
-
+package com.imronmaulana.crudstudent.entity;
 import jakarta.persistence.*;
 
 @Entity
@@ -15,10 +14,6 @@ public class Student {
     private String address;
 
 
-    public Student() {
-        // Default constructor
-    }
-
     public Student(String name, String nim, String email, String address) {
         this.name = name;
         this.nim = nim;
@@ -26,7 +21,10 @@ public class Student {
         this.address = address;
     }
 
-    // Getter and Setter methods for all attributes
+    public Student() {
+
+    }
+
 
     public Long getId() {
         return id;
@@ -68,21 +66,5 @@ public class Student {
         this.address = address;
     }
 
-    @Override
-    public String toString() {
-        return "Student{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", nim='" + nim + '\'' +
-                ", email='" + email + '\'' +
-                ", address='" + address + '\'' +
-                '}';
-    }
+
 }
-
-
-
-
-
-
-

@@ -1,5 +1,6 @@
-package com.imronmaulana.crudstudent;
+package com.imronmaulana.crudstudent.repository;
 
+import com.imronmaulana.crudstudent.entity.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
